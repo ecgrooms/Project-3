@@ -14,6 +14,8 @@ public class MesoEqual {
 
 	MesoAscii a = new MesoAscii( new MesoStation(letters));
 	
+	int value = a.calAverage();
+	
 	public MesoEqual(String name) {
 		letters = name;
 	}
@@ -41,7 +43,6 @@ public class MesoEqual {
         
     }
 	
-	int value = a.calAverage();
 	/* loop over each station in the list and get the value
 	 * then compare to the StID, add to map if the same
 	 * return the list of same value station

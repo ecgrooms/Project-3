@@ -6,8 +6,11 @@ public class StationLexicographical extends MesoSortedAbstract{
 	
 	@Override
 	Map<String, Integer> sortedMap(HashMap<String, Integer> unsorted) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		HashMap<String, Integer> sMap = new HashMap<String, Integer>(unsorted);
+		sMap = (HashMap<String, Integer>) unsorted.entrySet();
+		
+		return sMap;
 	}
 	
 	public StationLexicographical(HashMap<String, Integer> value) {
