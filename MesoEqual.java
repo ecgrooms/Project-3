@@ -37,6 +37,11 @@ public class MesoEqual {
         br.close();
         
     }
+	
+	/* loop over each station in the list and get the value
+	 * then compare to the StID, add to map if the same
+	 * return the list of same value station
+	 */
 	public HashMap<String, Integer> calAsciiEqual() {
 		for(String stID : stid.keySet()) {
 			
