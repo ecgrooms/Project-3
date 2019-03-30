@@ -17,6 +17,7 @@ public class MesoAscii extends MesoAsciiAbstract{
 	 * Return the average value
 	 * @see MesoAsciiAbstract
 	 */
+
 	@Override
 	public int calAverage() {
 		
