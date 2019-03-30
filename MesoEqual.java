@@ -14,7 +14,7 @@ public class MesoEqual {
 
 	MesoAscii a = new MesoAscii( new MesoStation(letters));
 	
-	int value = a.calAverage();
+	Integer value = a.calAverage();
 	
 	public MesoEqual(String name) {
 		letters = name;
