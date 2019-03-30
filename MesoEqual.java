@@ -11,6 +11,9 @@ public class MesoEqual {
 	ArrayList<String> stIDList = new ArrayList<String>();
 	
 	String letters;
+
+	MesoAscii a = new MesoAscii( new MesoStation(letters));
+	
 	public MesoEqual(String name) {
 		letters = name;
 	}
@@ -38,18 +41,22 @@ public class MesoEqual {
         
     }
 	
+	int value = a.calAverage();
 	/* loop over each station in the list and get the value
 	 * then compare to the StID, add to map if the same
 	 * return the list of same value station
 	 */
 	public HashMap<String, Integer> calAsciiEqual() {
-		for(String stID : stid.keySet()) {
-			
-			if(stid.get(stID).equals(stid.values())){
-				
+		
+		MesoAscii b = new MesoAscii( new MesoStation(letters));
+
+		for(String name : stIDList) {
+			int v = b.calAverage();
+			if(v == value){
+				stid.put(name, v);
 			}
 		}
-		return null;
+		return stid;
 	}
 
 }
