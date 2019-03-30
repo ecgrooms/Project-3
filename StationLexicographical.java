@@ -10,8 +10,14 @@ public class StationLexicographical extends MesoSortedAbstract{
 		return null;
 	}
 	
-public StationLexicographical(HashMap<String, Integer> value) {
+	public StationLexicographical(HashMap<String, Integer> value) {
 		
+		for (String stid : value.keySet()) {
+			
+			System.out.println(stid + " " + value.get(stid));
+			
+		}
+	
 	}
 
 }
