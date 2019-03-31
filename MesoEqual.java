@@ -6,8 +6,10 @@ import java.util.HashMap;
 
 public class MesoEqual {
 	
+	//the map for a list of station IDs and their values
 	HashMap<String, Integer> stid = new HashMap<String, Integer>();
 	
+	//A list for station IDs
 	ArrayList<String> stIDList = new ArrayList<String>();
 	
 	String letters;
