@@ -22,16 +22,16 @@ public class MesoAscii extends MesoAsciiAbstract{
 	public int calAverage() {
 		
 		int letterValue;
-		int sum = 0;
+		double sum = 0;
 		
 		for(int i = 0; i < 4; ++i) {
-			letterValue = (int) StID.getStID().charAt(i);		//Use getStID() instead of toString() to get the correct value
+			letterValue = (int) StID.getStID().charAt(i);
 			sum = sum + letterValue;
 		}
 		
-		int avgNum = sum / 4;
+		double avgNum = sum / 4;
 		
-		int value = Math.round(avgNum);
+		int value = (int) Math.round(avgNum);
 		
 		return value;
 	}
