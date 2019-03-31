@@ -1,3 +1,8 @@
+/*
+ * AUTHOR: ERIN GROOMS
+ * DUE DATE: 03-30-2019
+ * 
+ */
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
