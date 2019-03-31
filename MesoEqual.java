@@ -40,6 +40,7 @@ public class MesoEqual {
 			
 		}
         
+        //close the buffered Reader
         br.close();
         
     }
