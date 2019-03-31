@@ -11,13 +11,10 @@ public class MesoEqual {
 	ArrayList<String> stIDList = new ArrayList<String>();
 	
 	String letters;
-
-	MesoAscii a = new MesoAscii( new MesoStation(letters));
 	
-	Integer value = a.calAverage();
-	
-	public MesoEqual(String name) {
+	public MesoEqual(String name) throws IOException {
 		letters = name;
+		read("Mesonet.txt");
 	}
 	
 	public void read(String filename) throws IOException
@@ -42,6 +39,12 @@ public class MesoEqual {
         br.close();
         
     }
+	
+	
+	MesoAscii a = new MesoAscii( new MesoStation(letters));
+	
+	Integer value = a.calAverage();
+	
 	
 	/* loop over each station in the list and get the value
 	 * then compare to the StID, add to map if the same

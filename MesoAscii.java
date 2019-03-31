@@ -21,8 +21,8 @@ public class MesoAscii extends MesoAsciiAbstract{
 	@Override
 	public int calAverage() {
 		
-		int letterValue;
-		double sum = 0;
+		int letterValue = 0;
+		double sum = 0.0;
 		
 		for(int i = 0; i < 4; ++i) {
 			letterValue = (int) StID.getStID().charAt(i);
