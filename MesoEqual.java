@@ -54,13 +54,15 @@ public class MesoEqual {
 	 * return the list of same value station
 	 */
 	public HashMap<String, Integer> calAsciiEqual() {
-		MesoAscii a = new MesoAscii( new MesoStation(letters));
-		
-		Integer value = a.calAverage();
-		
-		MesoAscii b = new MesoAscii( new MesoStation(letters));
 
 		for(String name : stIDList) {
+			
+			MesoAscii a = new MesoAscii( new MesoStation(letters));
+			
+			Integer value = a.calAverage();
+			
+			MesoAscii b = new MesoAscii( new MesoStation(letters));
+			
 			int v = b.calAverage();
 			if(v == value){
 				stid.put(name, v);
