@@ -18,7 +18,6 @@ public class MesoAscii extends MesoAsciiAbstract{
 	 * @see MesoAsciiAbstract
 	 */
 
-	@Override
 	public int calAverage() {
 		
 		int letterValue = 0;

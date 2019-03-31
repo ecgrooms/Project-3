@@ -27,10 +27,11 @@ public class MesoEqual {
         letters = br.readLine();
         letters = br.readLine();
         letters = br.readLine();
-        
+        letters = br.readLine();
+        letters = br.readLine();
         while(letters != null) {
 			
-        	String words = letters.substring(1, 5);
+        	String words = letters.substring(2, 6);
 			letters = br.readLine();
 			stIDList.add(words);
 			
@@ -41,9 +42,7 @@ public class MesoEqual {
     }
 	
 	
-	MesoAscii a = new MesoAscii( new MesoStation(letters));
 	
-	Integer value = a.calAverage();
 	
 	
 	/* loop over each station in the list and get the value
@@ -51,7 +50,9 @@ public class MesoEqual {
 	 * return the list of same value station
 	 */
 	public HashMap<String, Integer> calAsciiEqual() {
+		MesoAscii a = new MesoAscii( new MesoStation(letters));
 		
+		Integer value = a.calAverage();
 		MesoAscii b = new MesoAscii( new MesoStation(letters));
 
 		for(String name : stIDList) {
