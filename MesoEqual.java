@@ -59,14 +59,15 @@ public class MesoEqual {
 			
 			MesoAscii a = new MesoAscii( new MesoStation(letters));
 			
-			Integer value = a.calAverage();
+			int value = a.calAverage();
 			
-			MesoAscii b = new MesoAscii( new MesoStation(letters));
+			MesoAscii b = new MesoAscii( new MesoStation(name));
 			
 			int v = b.calAverage();
 			if(v == value){
 				stid.put(name, v);
 			}
+			
 		}
 		return stid;
 	}
