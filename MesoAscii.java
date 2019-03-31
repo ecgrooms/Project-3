@@ -1,4 +1,7 @@
-
+/*
+ * AUTHOR: ERIN GROOMS
+ * DUE DATE: 03-30-2019
+ */
 public class MesoAscii extends MesoAsciiAbstract{
 	
 	/*
