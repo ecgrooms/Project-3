@@ -57,6 +57,7 @@ public class MesoEqual {
 		MesoAscii a = new MesoAscii( new MesoStation(letters));
 		
 		Integer value = a.calAverage();
+		
 		MesoAscii b = new MesoAscii( new MesoStation(letters));
 
 		for(String name : stIDList) {
