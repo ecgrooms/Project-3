@@ -16,7 +16,6 @@ public class MesoEqual {
 	
 	public MesoEqual(String name) throws IOException {
 		letters = name;
-		read("Mesonet.txt");
 	}
 	
 	public void read(String filename) throws IOException
